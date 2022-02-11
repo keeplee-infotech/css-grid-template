@@ -1,0 +1,21 @@
+/* For Small Screen */
+@media screen and (max-width: 992px)  {	
+	.grid {
+	  display: grid;
+	  grid-template-rows: repeat(3, 1fr, 2fr, 1fr );
+	  grid-template-columns: repeat(12, 1fr);
+	  grid-gap: 10px;
+	}
+	.box {
+		color: white;
+		font-size: 3vw;
+		padding: 10px;
+		text-align: center;
+		background:red;
+		background-color:#FF0000;
+	}
+	.box:nth-child(1) { grid-column: span 10;} 
+	.box:nth-child(2) { grid-column: span 2; }
+	.box:nth-child(3) { grid-column: span 12; min-height: 800px; }
+	.box:nth-child(4) { grid-column: span 12; }
+}
